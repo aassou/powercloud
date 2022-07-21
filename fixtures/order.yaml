@@ -1,0 +1,20 @@
+App\Entity\Order:
+    order_{1..10}:
+        customerTitle: <title()>
+        customerFirstname: <firstName()>
+        customerLastname: <lastName()>
+        customerEmail: <email()>
+        campaignTitle: <text()>
+        campaignSummary: <text()>
+        campaignStartDate: <dateTime()>
+        campaignEndDate: <dateTime()>
+        campaignProductLimit: <numberBetween(1, 10)>
+        campaignSpecial: <boolean()>
+        deliveryStartDate: <dateTime()>
+        deliveryEndDate: <dateTime()>
+        permanentOrder: <boolean()>
+        created: <dateTime()>
+        createdBy: <text()>
+        updated: <dateTime()>
+        updatedBy: <text()>
+        isPublished: <boolean()>

@@ -1,0 +1,11 @@
+App\Entity\Product:
+    product_{1..10}:
+        name: <name()>
+        type: <text()>
+        price: <price()>
+        providerId: <numberBetween(10000, 100000)>
+        created: <dateTime()>
+        createdBy: <text()>
+        updated: <dateTime()>
+        updatedBy: <text()>
+        isPublished: <boolean(35)>
